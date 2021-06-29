@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #00aaaa;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html body {
+  background-color: #212324;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body h1 {
+  color: whitesmoke;
+  font-size: 5vw;
+  text-shadow: 0.1em 0.2em 0.2em rgba(9, 9, 9, 0.836);
+}
+
+html body div.wait-search-hidden {
+  visibility: hidden;
+  -webkit-transform: translate(0, -100vh);
+          transform: translate(0, -100vh);
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+html body div.wait-search {
+  visibility: visible;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  position: fixed;
+  top: 0vh;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  background-color: rgba(188, 18, 18, 0.781);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+html body div.wait-search p {
+  color: whitesmoke;
+  font-size: 2em;
+  text-shadow: 0.1em 0.2em 0.2em rgba(9, 9, 9, 0.836);
+}
+
+html body section.search-content {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body section.search-content select#cbox_pokemon {
+  width: 90%;
+  height: 3em;
+  color: whitesmoke;
+  background-color: rgba(49, 48, 48, 0.842);
+  font-size: 1.2em;
+}
+
+html body section.statistics-content {
+  width: calc(100% - 2em);
+  margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (10vh)[3];
+      grid-template-rows: repeat(3, 10vh);
+  border-radius: 1em;
+  border: 0.1em solid #ebdfdf;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html body section.statistics-content label.statistics:nth-of-type(2n + 2) {
+  background-color: rgba(163, 12, 12, 0.514);
+  text-align: center;
+}
+
+html body section.statistics-content label.statistics:nth-of-type(2n + 1) {
+  background-color: rgba(33, 3, 124, 0.479);
+  text-align: center;
+}
+
+html body section.statistics-content label.statistics:nth-child(8) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/ span 2;
+  background-color: rgba(65, 4, 122, 0.342);
+}
+
+html body section.statistics-content label.statistics span {
+  margin-top: 0.4em;
+  color: whitesmoke;
+  font-size: 3vw;
+  text-shadow: 0.1em 0.3em 0.25em rgba(0, 0, 0, 0.86);
+}
+
+html body section.statistics-content label.statistics p {
+  margin-top: 0.2em;
+  color: whitesmoke;
+  font-size: 3.5vw;
+  text-shadow: 0.1em 0.2em 0.2em rgba(9, 9, 9, 0.836);
+}
+/*# sourceMappingURL=styles.css.map */
